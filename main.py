@@ -16,8 +16,8 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.youlikehits.com/")
 
-username = "Gooffball"
-password = "mWVt8Mn7C7&x"
+username = ""
+password = ""
 print(driver.title)
 
 
