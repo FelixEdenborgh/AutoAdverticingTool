@@ -16,8 +16,8 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.youlikehits.com/")
 
-username = ""
-password = ""
+username = "Gooffball"
+password = "mWVt8Mn7C7&x"
 print(driver.title)
 
 
@@ -36,6 +36,7 @@ search.send_keys(password)
 
 search = driver.find_element_by_xpath('//*[@id="bodybg"]/table[2]/tbody/tr/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/center/form/table/tbody/tr[3]/td/span/input').click()
 
+pointsMade = 0
 
 
 
@@ -52,7 +53,9 @@ time.sleep(5)
 start = True
 while(start):
     # Going to start of page
-    driver.get("https://www.youlikehits.com/")
+    # driver.get("https://www.youlikehits.com/")
+    driver.back()
+    driver.back()
     time.sleep(2)
     print("So far where there rtweet: ", rtweet, " atempts made")
     print("So far where there tweet: ", tweet, " atempts made")
